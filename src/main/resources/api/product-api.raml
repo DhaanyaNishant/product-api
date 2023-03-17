@@ -1,0 +1,19 @@
+#%RAML 1.0
+title: product-api
+baseUri: http://localhost:8081/products
+/products:
+  get:
+    description: get product information
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "productId" : 1234,
+                "productName" : "Pen-drive",
+                "productDescription" : "Pen Drive",
+                "productOwner": "Udemy"
+
+
+              }
